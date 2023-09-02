@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-db_connection = sqlite3.connect('../instance/badweather.sql')
+db_connection = sqlite3.connect('../instance/badweather.sqlite')
 
 try:
     cursor = db_connection.cursor()
