@@ -10,9 +10,7 @@ try:
     rows = cursor.fetchall()
     text_fields = [row[0] for row in rows]
     json_output = {
-        "high": {
             "badweather": [row[0] for row in rows]
-        }
     }
     json_string = json.dumps(json_output, indent=4)
     print(json_string)
